@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qui-KZ-hkv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fdlogo" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-5h-fMw">
+                                <rect key="frame" x="44" y="64" width="326" height="326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ce6-5h-fMw" secondAttribute="height" multiplier="1:1" id="hBH-Vt-xoi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Most Popular App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDs-D3-5Ue">
+                                <rect key="frame" x="10" y="430" width="394" height="46.5"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iir-SN-XTD">
+                                <rect key="frame" x="100" y="576.5" width="214" height="1"/>
+                                <color key="backgroundColor" red="0.10081439139999999" green="0.21641802369999999" blue="0.23171795689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="UGR-eq-34N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qtN-iD-zuX"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iir-SN-XTD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FDs-D3-5Ue" secondAttribute="bottom" constant="10" id="4Xe-Vc-aEN"/>
+                            <constraint firstItem="qtN-iD-zuX" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iir-SN-XTD" secondAttribute="bottom" priority="750" constant="10" id="7xT-3O-RRs"/>
+                            <constraint firstItem="FDs-D3-5Ue" firstAttribute="centerX" secondItem="qtN-iD-zuX" secondAttribute="centerX" id="Bvr-cq-thS"/>
+                            <constraint firstItem="qtN-iD-zuX" firstAttribute="trailing" secondItem="FDs-D3-5Ue" secondAttribute="trailing" constant="10" id="CdF-0d-eFK"/>
+                            <constraint firstItem="iir-SN-XTD" firstAttribute="leading" secondItem="qtN-iD-zuX" secondAttribute="leading" constant="100" id="Dcw-60-lzM"/>
+                            <constraint firstItem="FDs-D3-5Ue" firstAttribute="leading" secondItem="qtN-iD-zuX" secondAttribute="leading" constant="10" id="FrT-sR-X0Z"/>
+                            <constraint firstItem="FDs-D3-5Ue" firstAttribute="top" secondItem="ce6-5h-fMw" secondAttribute="bottom" constant="40" id="VyH-tA-ojf"/>
+                            <constraint firstItem="ce6-5h-fMw" firstAttribute="centerX" secondItem="qtN-iD-zuX" secondAttribute="centerX" id="WNI-5K-L3Q"/>
+                            <constraint firstItem="iir-SN-XTD" firstAttribute="top" secondItem="FDs-D3-5Ue" secondAttribute="bottom" priority="500" constant="100" id="i8c-dl-k8g"/>
+                            <constraint firstItem="ce6-5h-fMw" firstAttribute="top" secondItem="qtN-iD-zuX" secondAttribute="top" constant="20" id="stM-N1-rTz"/>
+                            <constraint firstItem="FDs-D3-5Ue" firstAttribute="centerY" secondItem="qtN-iD-zuX" secondAttribute="centerY" id="xNf-mj-GZq"/>
+                            <constraint firstItem="qtN-iD-zuX" firstAttribute="trailing" secondItem="iir-SN-XTD" secondAttribute="trailing" constant="100" id="xgO-ZO-Hv3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fdlogo" width="500" height="500"/>
+    </resources>
+</document>

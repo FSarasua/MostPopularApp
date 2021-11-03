@@ -12,12 +12,12 @@ struct Endpoint {
     static let mostPopular = "/mostpopular/v2"
     
     
-    static let keyToken = "api-key="
+    static let keyToken = "api-key"
     static let token = "2bB0BGGe2pysadVQorASzqyClBzI5w1G"
     
-    static let emailed = "/mostemailed"
-    static let shared = "/mostshared"
-    static let viewed = "/mostviewed"
+    static let emailed = "/emailed"
+    static let shared = "/shared"
+    static let viewed = "/viewed"
     
     static let allSections = "/all-sections"
     
@@ -25,19 +25,9 @@ struct Endpoint {
     static let twitter = "/twitter"
     static let facebookAndTwitter = "/facebook;twitter"
     
-    static let day = "/1.json?"
-    static let week = "/7.json?"
-    static let month = "/30.json?"
+    static let day = "/1"
+    static let week = "/7"
+    static let month = "/30"
     
-//    https://api.nytimes.com/svc/mostpopular/v2/all­sections/facebook;twitter/30.json ?api-key=2bB0BGGe2pysadVQorASzqyClBzI5w1G
-    
-    
-    /* EJEMPLOS VÁLIDOS */
-    
-    /*
-     
-     https://api.nytimes.com/svc/mostpopular/v2/mostshared/all-sections/30.json?api-key=2bB0BGGe2pysadVQorASzqyClBzI5w1G
-     https://api.nytimes.com/svc/mostpopular/v2/mostshared/all-sectionsapi-key=2bB0BGGe2pysadVQorASzqyClBzI5w1G
-     
-     */
+    static let jsonEnd = ".json?"
 }

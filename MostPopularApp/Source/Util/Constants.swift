@@ -41,34 +41,4 @@ struct Constants {
             static let byDefault = "Se ha producido un error."
         }
     }
-    
-    static func getErrorTitle(type: ErrorType) -> String {
-        
-        switch type {
-        
-        case .webView:
-            return Constants.Title.Error.webView
-        
-        case .service:
-            return Constants.Title.Error.service
-            
-        case .JSONParser:
-            return Constants.Title.Error.jsonParser
-            
-        default:
-            return Constants.Title.Error.byDefault
-        }
-    }
-    
-    static func getErrorMessage(type: ErrorType) -> String {
-        
-        switch type {
-        
-        case .webView:
-            return Constants.Message.Error.webView
-
-        default:
-            return Constants.Message.Error.byDefault
-        }
-    }
 }

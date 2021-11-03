@@ -14,7 +14,7 @@ struct ErrorManager {
     func parseToErrorModel(error: Error?, type: ErrorType) -> ErrorModel {
         let model = ErrorModel()
          
-        model.title = Constants.getErrorTitle(type: type)
+        model.title = ErrorManager.getErrorTitle(type: type)
         model.type = type
         model.message = error?.localizedDescription ?? ""
         model.debugMessage = error.debugDescription
@@ -24,5 +24,29 @@ struct ErrorManager {
         }
         
         return model
+    }
+    
+    static func getErrorTitle(type: ErrorType) -> String {
+        
+        switch type {
+        case .webView:
+            return Constants.Title.Error.webView
+        case .service:
+            return Constants.Title.Error.service
+        case .JSONParser:
+            return Constants.Title.Error.jsonParser
+        default:
+            return Constants.Title.Error.byDefault
+        }
+    }
+    
+    static func getErrorMessage(type: ErrorType) -> String {
+        
+        switch type {
+        case .webView:
+            return Constants.Message.Error.webView
+        default:
+            return Constants.Message.Error.byDefault
+        }
     }
 }

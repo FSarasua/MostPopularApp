@@ -26,8 +26,8 @@ class ErrorModel {
     
     internal init(title: String? = nil, message: String? = nil, debugMessage: String? = nil, actions: [AlertActionModel]? = nil, code: Int? = nil, type: ErrorType) {
         
-        self.title = Constants.getErrorTitle(type: type)
-        self.message = Constants.getErrorMessage(type: type) 
+        self.title = ErrorManager.getErrorTitle(type: type)
+        self.message = ErrorManager.getErrorMessage(type: type)
         self.debugMessage = debugMessage ?? ""
         self.actions = actions ?? []
         self.code = code ?? -1

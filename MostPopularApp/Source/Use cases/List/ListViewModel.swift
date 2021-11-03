@@ -57,21 +57,6 @@ class ListViewModel {
             break
         }
         
-        url += Endpoint.allSections
-        
-        if data.filter.type == Constants.Title.shared {
-            
-            if data.filter.fonts.contains(Constants.Title.facebook) && data.filter.fonts.contains(Constants.Title.twitter) {
-                url += Endpoint.facebookAndTwitter
-            }
-            
-            if data.filter.fonts.contains(Constants.Title.facebook) {
-                url += Endpoint.facebook
-            } else if data.filter.fonts.contains(Constants.Title.twitter) {
-                url += Endpoint.twitter
-            }
-        }
-        
         switch data.filter.period {
         
         case Constants.Title.day:
@@ -87,7 +72,20 @@ class ListViewModel {
             break
         }
         
-        url += Endpoint.keyToken + Endpoint.token
+        if data.filter.type == Constants.Title.shared {
+            
+            if data.filter.fonts.contains(Constants.Title.facebook) && data.filter.fonts.contains(Constants.Title.twitter) {
+                url += Endpoint.facebookAndTwitter
+            }
+            
+            if data.filter.fonts.contains(Constants.Title.facebook) {
+                url += Endpoint.facebook
+            } else if data.filter.fonts.contains(Constants.Title.twitter) {
+                url += Endpoint.twitter
+            }
+        }
+        
+        url += Endpoint.jsonEnd
         
         return url
     }

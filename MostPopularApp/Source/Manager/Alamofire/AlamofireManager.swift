@@ -16,7 +16,7 @@ struct AlamofireManager {
 
     func request(_ urlContent: String, success: @escaping (Data) -> Void, failure: @escaping (Error?) -> Void) {
         
-        AF.request(urlContent).responseJSON { response in
+        AF.request(urlContent, parameters: [Endpoint.keyToken:Endpoint.token]).responseJSON { response in
 
             if let data = response.data {
                 success(data)

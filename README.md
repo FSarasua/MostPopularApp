@@ -35,7 +35,7 @@ Una vez el simulador se encienda y se termine de configurar, la aplicación se a
 
 **Swift** - Lenguaje de programación
 
-**Arquitectura VIPER** - Arquitectura basada en el desarrollo separado por capas.
+**Arquitectura MVVM** - Arquitectura basada en el desarrollo separado por capas: View, Model y View-Model.
 
 **Alamofire** - Pod ( Librería externa )
 
